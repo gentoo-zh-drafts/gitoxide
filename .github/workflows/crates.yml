@@ -1,6 +1,8 @@
 name: Sync with upstream
 on:
   push:
+    tags:
+      - v*
   schedule:
     - cron: "12 * * * *"
   workflow_dispatch:
